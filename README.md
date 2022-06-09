@@ -1,2 +1,6 @@
-# Node_Login_JWT_MongoDb
-Node JS Register and Login API using JWT &amp; MongoDB
+
+# 4.2: Node REST + DB + JWT
+
+### Instruccions
+
+### Bibliografia
