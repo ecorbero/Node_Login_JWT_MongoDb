@@ -5,7 +5,7 @@ const auth = require("../middlewares/auth");
 async function login({ username, password}, callback) {
   const user = await User.findOne({ username});
 
-  if (user.password!=null) {
+  if (user != null) {
     if (bcrypt.compareSync(password, user.password)) {
       const token = auth.generateAccesssToken(username);
       return callback(null, {...user.toJSON(),token});
